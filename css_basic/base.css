@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+header, main, footer, article, aside {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  background-color: #f9f9f9;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.works_on_smartphone {
+  padding: 10px;
+}
