@@ -1,58 +1,60 @@
-/* === MEMBERSHIP SECTION === */
-.membership {
-  background-color: #071629;
-  padding: 60px 80px;
-  color: #ffffff;
+/* FAQ Section */
+.faq {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faq h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #222;
   text-align: center;
 }
 
-.membership h2 {
-  font-size: 32px;
-  margin-bottom: 50px;
-  color: #ffffff;
-}
-
-.membership-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
-  justify-items: center;
-  margin-bottom: 40px;
-}
-
-.membership-card {
-  max-width: 250px;
-  text-align: center;
-}
-
-.membership-card img {
-  width: 70px;
-  margin-bottom: 20px;
-}
-
-.membership-card h3 {
-  font-size: 18px;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.membership-card p {
-  font-size: 14px;
-  color: #d8d8d8;
-}
-
-.register-btn {
-  background-color: #C271FF;
-  color: white;
-  font-size: 14px;
-  padding: 14px 30px;
-  border: none;
-  border-radius: 25px;
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 1.2rem 0;
   cursor: pointer;
-  font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
-.register-btn:hover {
-  background-color: #a650d1;
+.faq-item:hover {
+  background-color: #f9f9f9;
+}
+
+.faq-question {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  display: none; /* hidden by default */
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Optional plus/minus icon for toggling */
+.faq-question::after {
+  content: '+';
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question::after {
+  content: '−';
+  transform: rotate(180deg);
 }
