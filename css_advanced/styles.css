@@ -1,60 +1,65 @@
-/* FAQ Section */
-.faq {
-  max-width: 700px;
-  margin: 3rem auto;
-  padding: 0 1rem;
+/* Footer Section */
+footer {
+  background-color: #1a1a1a; /* dark background */
+  color: #eee;              /* light text */
+  padding: 2rem 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.faq h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  color: #222;
   text-align: center;
+  border-top: 1px solid #333;
 }
 
-.faq-item {
-  border-bottom: 1px solid #ddd;
-  padding: 1.2rem 0;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.faq-item:hover {
-  background-color: #f9f9f9;
-}
-
-.faq-question {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #333;
+footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 1.5rem;
+}
+
+footer .footer-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f4b41a; /* accent color */
+  cursor: pointer;
+  user-select: none;
+}
+
+footer nav.footer-nav {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
-.faq-answer {
-  margin-top: 0.6rem;
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.5;
-  display: none; /* hidden by default */
+footer nav.footer-nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.faq-item.active .faq-answer {
-  display: block;
+footer nav.footer-nav a:hover {
+  color: #f4b41a;
 }
 
-/* Optional plus/minus icon for toggling */
-.faq-question::after {
-  content: '+';
-  font-weight: 700;
-  font-size: 1.5rem;
-  transition: transform 0.3s ease;
+footer .footer-copy {
+  width: 100%;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #777;
 }
 
-.faq-item.active .faq-question::after {
-  content: '−';
-  transform: rotate(180deg);
+/* Responsive */
+@media (max-width: 600px) {
+  footer .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer nav.footer-nav {
+    gap: 1rem;
+  }
 }
