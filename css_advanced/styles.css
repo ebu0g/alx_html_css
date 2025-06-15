@@ -1,89 +1,124 @@
-/* === Global Settings === */
-body {
+/* === GENERAL === */
+* {
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #ffffff;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* === HEADER === */
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 80px;
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* === NAVBAR === */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
+  padding: 20px 60px;
+  background-color: #fff;
 }
 
-header img {
-  height: 35px;
+.logo {
+  height: 30px;
 }
 
-header nav ul {
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 48px;
-  margin: 0;
-  padding: 0;
+  gap: 40px;
 }
 
-header nav ul li a {
+.nav-links a {
   text-decoration: none;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 0.04em;
+  color: #C271FF;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 /* === BANNER SECTION === */
-section.hero {
-  position: relative;
-  background: url('../images/hero.jpg') center center / cover no-repeat;
-  height: 100vh;
+.banner {
+  background-image: url('https://fakeimg.pl/1200x400?text=Banner+Background');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.banner-tags {
   display: flex;
-  align-items: center;
-  padding: 0 80px;
-}
-
-section.hero .content {
-  max-width: 600px;
-}
-
-section.hero h1 {
-  font-size: 64px;
-  font-weight: 700;
-  margin: 0 0 30px;
-  line-height: 1.2;
-}
-
-section.hero .tags {
-  display: flex;
-  gap: 16px;
+  justify-content: center;
+  gap: 40px;
   margin-bottom: 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
-section.hero .tags span {
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 6px 12px;
-  font-size: 12px;
-  border-radius: 4px;
-}
-
-section.hero button {
+.btn {
   background-color: #C271FF;
-  color: #ffffff;
+  color: #fff;
   border: none;
   border-radius: 22px;
   padding: 12px 24px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  transition: opacity 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-section.hero button:hover {
-  opacity: 0.85;
+.btn:hover {
+  background-color: #a04edb;
+}
+
+/* === QUOTE SECTION === */
+.quote-section {
+  background-color: #C271FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 80px;
+  color: #ffffff;
+  gap: 60px;
+}
+
+.quote-image img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote-text {
+  max-width: 600px;
+}
+
+.quote-text blockquote {
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.quote-text h3 {
+  font-weight: 700;
+  margin: 0;
+  font-size: 16px;
+}
+
+.quote-text p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* === UTILITIES === */
+.round {
+  border-radius: 50%;
+  object-fit: cover;
 }
