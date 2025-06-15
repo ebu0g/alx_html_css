@@ -1,124 +1,79 @@
-/* === GENERAL === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* === NAVBAR === */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  background-color: #fff;
-}
-
-.logo {
-  height: 30px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #C271FF;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-/* === BANNER SECTION === */
-.banner {
-  background-image: url('https://fakeimg.pl/1200x400?text=Banner+Background');
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 100px 20px;
-  color: white;
-}
-
-.banner h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.banner-tags {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-bottom: 30px;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-
-.btn {
-  background-color: #C271FF;
-  color: #fff;
-  border: none;
-  border-radius: 22px;
-  padding: 12px 24px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #a04edb;
-}
-
-/* === QUOTE SECTION === */
-.quote-section {
-  background-color: #C271FF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* === VIDEOS SECTION === */
+.videos-section {
   padding: 60px 80px;
-  color: #ffffff;
-  gap: 60px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
-.quote-image img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
+.videos-section h2 {
+  font-size: 32px;
+  color: #071629;
+  margin-bottom: 50px;
 }
 
-.quote-text {
-  max-width: 600px;
+.video-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  justify-items: center;
 }
 
-.quote-text blockquote {
-  font-style: italic;
-  font-size: 22px;
-  line-height: 1.5;
-  margin-bottom: 20px;
+.video-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(7, 22, 41, 0.1);
+  padding: 20px;
+  text-align: left;
+  max-width: 280px;
 }
 
-.quote-text h3 {
-  font-weight: 700;
-  margin: 0;
-  font-size: 16px;
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
 }
 
-.quote-text p {
+.video-card h3 {
+  font-size: 18px;
+  color: #071629;
+  margin-bottom: 10px;
+}
+
+.video-card p {
   font-size: 14px;
-  margin-top: 5px;
+  color: #6c6c6c;
+  margin-bottom: 15px;
 }
 
-/* === UTILITIES === */
-.round {
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.author img {
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.author h4 {
+  font-size: 14px;
+  color: #C271FF;
+  font-weight: 600;
+}
+
+.rating {
+  color: #ffc107;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.duration {
+  font-size: 12px;
+  color: #6c6c6c;
+  text-align: right;
 }
