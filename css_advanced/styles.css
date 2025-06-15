@@ -1,0 +1,318 @@
+/* Global Reset & Font */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+/* Utility classes */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header / Navigation */
+header {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 120px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e0e0e0;
+}
+
+/* Hero Section */
+section:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0 20px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('./images/hero.jpg') center/cover no-repeat;
+  color: #fff;
+}
+
+section:nth-of-type(1) h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+section:nth-of-type(1) span {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 6px 12px;
+  margin-right: 10px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+section:nth-of-type(1) button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #9b4dff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+section:nth-of-type(1) button:hover {
+  opacity: 0.9;
+}
+
+/* Learn From Pros */
+section:nth-of-type(2) {
+  padding: 80px 20px;
+  background-color: #f9f9fc;
+  text-align: center;
+}
+
+section:nth-of-type(2) h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+section:nth-of-type(2) > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+section:nth-of-type(2) > div > div > div {
+  max-width: 220px;
+  text-align: center;
+}
+
+section:nth-of-type(2) img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+/* Quote Section */
+section:nth-of-type(3) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 80px 20px;
+  background-color: #9b4dff;
+  color: #fff;
+}
+
+section:nth-of-type(3) img {
+  max-width: 320px;
+  width: 100%;
+  margin: auto;
+}
+
+section:nth-of-type(3) blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+section:nth-of-type(3) h3 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+section:nth-of-type(3) p {
+  opacity: 0.8;
+}
+
+/* Tutorials Section */
+section:nth-of-type(4) {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+section:nth-of-type(4) h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+section:nth-of-type(4) > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+section:nth-of-type(4) img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+section:nth-of-type(4) h3 {
+  font-size: 1.4rem;
+  margin-top: 16px;
+}
+
+section:nth-of-type(4) p {
+  font-size: 0.95rem;
+  margin: 12px 0;
+}
+
+section:nth-of-type(4) h4 {
+  margin-left: 8px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+section:nth-of-type(4) .fa-star {
+  color: #f1c40f;
+}
+
+section:nth-of-type(4) p:last-child {
+  opacity: 0.6;
+  margin-top: 8px;
+}
+
+/* Membership Section */
+section:nth-of-type(5) {
+  padding: 80px 20px;
+  background-color: #091026;
+  color: #fff;
+  text-align: center;
+}
+
+section:nth-of-type(5) h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+section:nth-of-type(5) > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+section:nth-of-type(5) img {
+  width: 60px;
+  margin-bottom: 16px;
+}
+
+section:nth-of-type(5) h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+section:nth-of-type(5) p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+section:nth-of-type(5) button {
+  margin-top: 40px;
+  padding: 14px 28px;
+  background: #9b4dff;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+section:nth-of-type(5) button:hover {
+  opacity: 0.9;
+}
+
+/* FAQ Section */
+section:nth-of-type(6) {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+section:nth-of-type(6) h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+section:nth-of-type(6) > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  text-align: left;
+}
+
+section:nth-of-type(6) h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+section:nth-of-type(6) p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 24px;
+}
+
+/* Footer */
+footer {
+  background-color: #091026;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer img {
+  width: 120px;
+}
+
+footer .fa-brands {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+footer p {
+  margin-top: 20px;
+  opacity: 0.6;
+}
