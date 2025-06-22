@@ -1,0 +1,74 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+  --color-primary: #FF6565;
+  --font-family: 'Source Sans Pro', sans-serif;
+  --max-width: 1000px;
+  --spacing: 1rem;
+  --btn-bg: var(--color-primary);
+  --btn-hover-opacity: 0.9;
+  --text-color: #222;
+}
+
+/* Basic Styles */
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  line-height: 1.5;
+  background: #fff;
+}
+/* New styles for What We Do Section */
+
+.what-we-do {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.15);
+}
+
+.card i.icon {
+  font-size: 3rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .cards {
+    flex-direction: column;
+  }
+}
